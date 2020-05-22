@@ -1,0 +1,327 @@
+/* Here is your custom css styles. */
+
+
+/* 顶部导航栏滚动变化效果 */
+header .brand-logo .logo-span {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+nav {
+    height: 56px;
+    line-height: 56px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.bg-color {
+    background-image: none;
+}
+nav.fixed {
+    position: fixed;
+    top: -56px;
+    z-index: 101;
+}
+nav.fixed a {
+    color: #34495e;
+}
+nav.visible {
+    transition: all 0.5s;
+    transform: translate3d(0, 100%, 0);
+}
+
+/* 手机导航栏样式 */
+.sidenav {
+    height: auto;
+}
+header .side-nav {
+    width: 200px;
+}
+header .side-nav .mobile-head img {
+    margin-top: 15px;
+}
+header .side-nav .mobile-head .logo-desc {
+    color: #34495e;
+}
+header .side-nav .mobile-head .logo-name {
+    color: #34495e;
+}
+
+/* 首页cover样式 */
+/* 博客标题 */
+.bg-cover .title {
+    font-weight: bold;
+}
+/* 社交图标 */
+.cover-social-link {
+    top: 22vh;
+}
+
+/* 首页卡片 */
+#articles {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.index-card {
+    margin-top: 0;
+    padding-top: 15px;
+}
+.index-card .card .card-content {
+    padding: 0;
+}
+.block-with-text {
+    min-height: 3em;
+    max-height: 3em;
+}
+article .card-image img {
+    height: 180px;
+    opacity: 1;
+}
+.card .card-title {
+    font-weight: bold;
+}
+.card .card-title a:hover {
+    text-decoration: none;
+}
+
+/* aboutMe页面 */
+#aboutme .row .col {
+    padding: 0;
+}
+
+/* 文章样式 */
+
+/* 文章详情页封面标题 */
+.bg-cover .post-title {
+    font-weight: bold;
+}
+
+/* 文章标签样式 */
+article .article-tags .chip {
+    background-color: #42b983 !important;
+}
+#artDetail .article-tag .chip {
+    background-color: #42b983 !important;
+}
+
+/* 文章超链接 */
+#articleContent a {
+    text-decoration: none;
+}
+#articleContent a:hover {
+    text-decoration: underline;
+}
+
+/* 图片 */
+.img-margin {
+    margin: 5px auto 20px auto;
+}
+.img-shadow {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 10px 20px -20px rgba(0, 0, 0, .2)
+}
+
+/* 表格 */
+table {
+    margin: 20px 0;
+}
+#articleContent table,
+th,
+td {
+    padding: 10px 10px;
+}
+
+/* 段落样式 */
+#articleContent p {
+    margin: 2px 2px 18px;
+}
+
+/* 引用块样式 */
+blockquote {
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+}
+blockquote p {
+    margin: 0.3rem 0 !important;
+    padding: 0.1rem 0;
+}
+
+/* 代码块样式 */
+
+/* 代码行号 */
+.line-numbers {
+    padding: 1rem 1.5rem 1.5rem 3.5rem !important;
+    margin: 1rem 0 !important;
+    background: #272822;
+    overflow: auto;
+    border-radius: 0.35rem;
+    tab-size: 4;
+}
+
+/* 代码样式 */
+pre {
+    padding: 2rem 1.5rem 1rem 1.5rem !important;
+    margin: 1rem 0 !important;
+    background: #24292E;
+    overflow: auto;
+    border-radius: 0.35rem;
+    tab-size: 4;
+}
+code {
+    padding: 1px 5px;
+    top: 13px !important;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+    font-size: 0.91rem;
+    color: #e96900;
+    background-color: #f8f8f8;
+    border-radius: 2px;
+}
+/* 代码复制 */
+.code_copy {
+    position: absolute;
+    top: 0.5rem;
+    right: 15px;
+    z-index: 1;
+    filter: invert(50%);
+    cursor: pointer;
+}
+/* 复制信息提示 */
+.codecopy_notice {
+    position: absolute;
+    top: 0.3rem;
+    right: 15px;
+    z-index: 1;
+    filter: invert(50%);
+    opacity: 0;
+}
+/* 代码语言 */
+.code_lang {
+    position: absolute;
+    top: 1rem;
+    left: 3.5rem;
+    line-height: 0;
+    font-weight: bold;
+    font-family: normal;
+    z-index: 1;
+    filter: invert(50%);
+    cursor: pointer;
+}
+/* 代码收缩 */
+.code-expand {
+    position: absolute;
+    top: 0.2rem;
+    left: 10px;
+    filter: invert(50%);
+    padding: 5px 10px;
+    z-index: 1 !important;
+    cursor: pointer;
+    transition: all .3s;
+    transform: rotate(0deg);
+}
+.code-closed .code-expand {
+    transform: rotate(-90deg) !important;
+    transition: all .3s;
+}
+.code-closed pre::before {
+    height: 0px;
+}
+pre code {
+    padding: 0;
+    color: #e8eaf6;
+    background-color: #24292E;
+}
+pre[class*="language-"] {
+    background: #24292E !important;
+    padding: 1.2em;
+    margin: .5em 0;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+    color: #e8eaf6;
+    white-space: pre-wrap !important;
+}
+
+/* 文章转载声明 */
+#artDetail .reprint {
+    margin: 25px 0 5px 0;
+    margin-bottom: 1rem;
+}
+
+/* 文章打赏样式 */
+#reward {
+    margin: 30px 0 20px 0 !important;
+}
+
+/* 去掉页面底部浏览进度条 */
+.progress-bar {
+    height: 0;
+}
+
+/* 页脚背景颜色 */
+.page-footer {
+    background-color: #24292E;
+}
+
+/* 跳动红心 */
+@keyframes heartAnimate{ 
+    0%,100%{transform:scale(1);}               /*0%,100%时保持图形的原大小*/
+    10%,30%{transform: scale(0.9);}            /*10%,30%时图形缩小成0.9倍*/
+    20%,40%,60%,80%{transform:scale(1.1);}     /*20%,40%,60%,80%时图形扩大成1.1倍*/
+    50%,70%{ transform:scale(1.1);}            /*50%,70%时图形扩大成1.1倍*/
+}
+#heart{
+    color: rgb(255, 113, 168);                 /*心当然要是红色的啦*/
+    animation: heartAnimate 1s infinite;       /*心当然要是跳动的啦*/
+}
+
+/* hexo-filter-github-emojis */
+.github-emoji{
+    height: 2em;
+    width: 2em;
+    display: inline-block !important;
+    position: relative;
+    margin: 0 3px !important;
+    padding: 0;
+}
+.github-emoji:hover{
+    animation: emoji-face 5s infinite ease-in-out;
+}
+@keyframes emoji-face {
+    2% {
+        transform: translate(0, 1.5px) rotate(1.5deg);
+    }
+    4% {
+        transform: translate(0, -1.5px) rotate(-0.5deg);
+    }
+    6% {
+        transform: translate(0, 1.5px) rotate(-1.5deg);
+    }
+    8% {
+        transform: translate(0, -1.5px) rotate(-1.5deg);
+    }
+    10% {
+        transform: translate(0, 2.5px) rotate(1.5deg);
+    }
+    12% {
+        transform: translate(0, -0.5px) rotate(1.5deg);
+    }
+    14% {
+        transform: translate(0, -1.5px) rotate(1.5deg);
+    }
+    16% {
+        transform: translate(0, -0.5px) rotate(-1.5deg);
+    }
+    18% {
+        transform: translate(0, 0.5px) rotate(-1.5deg);
+    }
+    20% {
+        transform: translate(0, -1.5px) rotate(2.5deg);
+    }
+    22% {
+        transform: translate(0, 0.5px) rotate(-1.5deg);
+    }
+    24% {
+        transform: translate(0, 1.5px) rotate(1.5deg);
+    }
+    26% {
+        transform: translate(0, 0.5px) rotate(0.5deg);
+    }
+    28% {
+        transform: translate(0, 0.5px) rotate(1.5deg);
+    }
+}
